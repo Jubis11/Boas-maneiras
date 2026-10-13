@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBP — Postura Profissional Começa Aqui</title>
+<meta name="description" content="Manual de Boas Práticas Profissionais e de Convivência na Escola. Postura profissional começa antes do primeiro emprego.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23191613'/><text x='32' y='45' font-family='Georgia,serif' font-size='36' font-weight='700' fill='%23F3EFE7' text-anchor='middle'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- biblioteca de ícones SVG (uso interno) -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="ic-arrow-r" viewBox="0 0 56 12"><path d="M0 6h48M42 1l7 5-7 5"/></symbol>
+  <symbol id="ic-arrow-dn" viewBox="0 0 12 52"><path d="M6 0v48M1 42l5 7 5-7"/></symbol>
+  <symbol id="ic-check" viewBox="0 0 16 14"><path d="M1.5 7.5l4.5 4.5L14.5 1.5"/></symbol>
+  <symbol id="ic-plus" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></symbol>
+  <symbol id="ic-ast" viewBox="0 0 24 24"><path d="M12 2v20M3.34 7l17.32 10M20.66 7L3.34 17"/></symbol>
+  <symbol id="ic-lr" viewBox="0 0 24 12"><path d="M7 1L2 6l5 5M17 1l5 5-5 5"/></symbol>
+  <symbol id="ic-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+</svg>
+
+<div class="progress"><span id="progressBar"></span></div>
+
+<!-- ===== NAVEGAÇÃO ===== -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#topo">
+      <span class="brand-mark">MBP</span>
+      <span class="brand-text">Manual de Boas Práticas</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#definicoes"><b>01</b>Definições</a></li>
+      <li><a href="#espacos"><b>02</b>Espaços</a></li>
+      <li><a href="#atitudes"><b>03</b>Atitudes</a></li>
+      <li><a href="#softskills"><b>04</b>Competências</a></li>
+      <li><a href="#mercado"><b>05</b>Mercado</a></li>
+    </ul>
+    <a class="nav-cta" href="#compromisso">Assinar o código</a>
+    <button class="burger" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- menu mobile -->
+<nav class="menu-overlay" id="menuOverlay" aria-label="Menu principal">
+  <div class="menu-top">
+    <span class="brand-mark" style="background:var(--accent)">MBP</span>
+    <button class="menu-close" id="menuClose" aria-label="Fechar menu"><svg class="i" width="18" height="18"><use href="#ic-x"/></svg></button>
+  </div>
+  <ul class="menu-list">
+    <li><a href="#definicoes"><b>01</b>Definições</a></li>
+    <li><a href="#espacos"><b>02</b>Espaços</a></li>
+    <li><a href="#atitudes"><b>03</b>Atitudes</a></li>
+    <li><a href="#softskills"><b>04</b>Competências</a></li>
+    <li><a href="#mercado"><b>05</b>Mercado</a></li>
+    <li><a href="#compromisso"><b>06</b>Compromisso</a></li>
+  </ul>
+  <p class="menu-foot">Manual de Boas Práticas Profissionais e de Convivência na Escola</p>
+</nav>
+
+<main>
+  <!-- ===== CAPA ===== -->
+  <section class="hero" id="topo">
+    <div class="wrap hero-main">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-kicker"><svg class="i"><use href="#ic-ast"/></svg> Manual de Boas Práticas Profissionais · Edição Escolar · Nº 01</p>
+          <h1>Postura<br>Profissional<span class="it">começa aqui.</span></h1>
+          <p class="hero-sub">O profissional que você será amanhã começa nas atitudes que você tem hoje.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#definicoes">Começar a leitura</a>
+            <a class="hero-link" href="#compromisso">ir direto ao compromisso</a>
+          </div>
+        </div>
+        <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circPath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+          <circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <text><textPath href="#circPath" textLength="500">POSTURA PROFISSIONAL • CONDUTA • BOAS PRÁTICAS • CONVIVÊNCIA •&#160;</textPath></text>
+          <path d="M100 84v32M84 100h32M89 89l22 22M111 89l-22 22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="wrap hero-meta-grid">
+        <p class="hm"><b>Para</b><strong>Estudantes</strong></p>
+        <p class="hm"><b>Assunto</b><strong>Conduta &amp; Convivência</strong></p>
+        <p class="hm" style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px"><span><b>Status</b><strong>Em vigor</strong></span><span class="scroll-hint">Role<svg class="i"><use href="#ic-arrow-dn"/></svg></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- faixa de palavras-chave -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="m-group">
+        <span class="m-item">Responsabilidade</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Respeito</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Organização</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Comunicação</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Comprometimento</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Ética</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Autonomia</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Trabalho em equipe</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+      </div>
+      <div class="m-group">
+        <span class="m-item">Responsabilidade</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Respeito</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Organização</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Comunicação</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Comprometimento</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Ética</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Autonomia</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+        <span class="m-item">Trabalho em equipe</span><svg class="i m-sep"><use href="#ic-ast"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 01 · O QUE É POSTURA PROFISSIONAL ===== -->
+  <section id="definicoes" style="padding-block:clamp(70px,10vw,120px)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>01</em> — Definições</span><span>Manual de Boas Práticas</span></div>
+      <div class="def-grid">
+        <div class="def-sticky reveal">
+          <h2 class="sec-title">O que é <span class="it">postura</span> profissional?</h2>
+          <p class="lead">
+            Não é um crachá que você recebe quando é contratado. É um conjunto de atitudes —
+            <strong>responsabilidade</strong>, <strong>respeito</strong>, <strong>organização</strong>, <strong>comunicação</strong> —
+            que se constrói <span class="acc">muito antes do primeiro emprego</span>.
+            A escola é o primeiro ambiente profissional da sua vida: é aqui que você ensaia quem vai ser.
+          </p>
+          <p class="def-note">Os dez pilares ao lado sustentam qualquer carreira. Nenhum deles aparece em um currículo — todos aparecem no seu comportamento.</p>
+        </div>
+        <div>
+          <div class="concept reveal"><span class="c-num">01</span><span class="c-name">Responsabilidade</span><span class="c-desc">Cumprir o que foi combinado, no prazo, sem precisar de cobrança constante.</span></div>
+          <div class="concept reveal" data-d="2"><span class="c-num">02</span><span class="c-name">Respeito</span><span class="c-desc">Tratar professores, colegas e funcionários como colegas de equipe — porque são.</span></div>
+          <div class="concept reveal" data-d="3"><span class="c-num">03</span><span class="c-name">Organização</span><span class="c-desc">Cuidar do seu espaço e do coletivo: mesa, sala, materiais, patrimônio.</span></div>
+          <div class="concept reveal" data-d="4"><span class="c-num">04</span><span class="c-name">Comunicação</span><span class="c-desc">Falar com clareza, ouvir de verdade e saber discordar sem desrespeitar.</span></div>
+          <div class="concept reveal" data-d="5"><span class="c-num">05</span><span class="c-name">Comprometimento</span><span class="c-desc">Estar presente de corpo e de atenção: chegar, participar, entregar.</span></div>
+          <div class="concept reveal" data-d="6"><span class="c-num">06</span><span class="c-name">Ética</span><span class="c-desc">Fazer o que é certo mesmo quando ninguém está olhando — principalmente então.</span></div>
+          <div class="concept reveal" data-d="7"><span class="c-num">07</span><span class="c-name">Educação</span><span class="c-desc">"Bom dia", "obrigado", "por favor". Custa nada e vale uma reputação inteira.</span></div>
+          <div class="concept reveal" data-d="8"><span class="c-num">08</span><span class="c-name">Autonomia</span><span class="c-desc">Resolver, procurar, perguntar. Não esperar que alguém faça por você.</span></div>
+          <div class="concept reveal" data-d="8"><span class="c-num">09</span><span class="c-name">Trabalho em equipe</span><span class="c-desc">Entender que o resultado é coletivo — e que a sua atitude afeta o grupo.</span></div>
+          <div class="concept reveal" data-d="8"><span class="c-num">10</span><span class="c-name">Cuidado com o ambiente</span><span class="c-desc">O estado de um espaço diz muito sobre quem passa por ele.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 02 · ESPAÇOS DA ESCOLA ===== -->
+  <section id="espacos" style="padding-block:clamp(70px,10vw,120px);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>02</em> — Espaços</span><span>Manual de Boas Práticas</span></div>
+      <h2 class="sec-title reveal">Como se comportar nos <span class="it">espaços</span> da escola</h2>
+      <div class="env-grid">
+        <div class="env-nav reveal" role="tablist" aria-label="Ambientes da escola">
+          <button class="env-btn active" data-target="env-aula" role="tab" aria-selected="true"><span class="n">A</span><span class="t">Sala de aula</span><svg class="i a"><use href="#ic-arrow-r"/></svg></button>
+          <button class="env-btn" data-target="env-corredores" role="tab" aria-selected="false"><span class="n">B</span><span class="t">Corredores &amp; áreas comuns</span><svg class="i a"><use href="#ic-arrow-r"/></svg></button>
+          <button class="env-btn" data-target="env-convivencia" role="tab" aria-selected="false"><span class="n">C</span><span class="t">Áreas de convivência</span><svg class="i a"><use href="#ic-arrow-r"/></svg></button>
+          <button class="env-btn" data-target="env-profissional" role="tab" aria-selected="false"><span class="n">D</span><span class="t">Ambientes profissionais</span><svg class="i a"><use href="#ic-arrow-r"/></svg></button>
+        </div>
+        <div>
+          <div class="env-panel active" id="env-aula" role="tabpanel">
+            <span class="env-tag">Ambiente A</span>
+            <h3>Sala de aula</h3>
+            <p class="env-quote">A sala de aula é a sua sala de reunião. Quem distrai o time, atrasa o projeto de todos.</p>
+            <p class="practice">Participar das atividades</p>
+            <p class="practice">Respeitar o professor e os colegas</p>
+            <p class="practice">Evitar conversas paralelas</p>
+            <p class="practice">Manter o ambiente organizado</p>
+          </div>
+          <div class="env-panel" id="env-corredores" role="tabpanel">
+            <span class="env-tag">Ambiente B</span>
+            <h3>Corredores e áreas comuns</h3>
+            <p class="env-quote">Corredor é área de circulação, não de palco. O volume da sua voz diz muito sobre o volume da sua consideração.</p>
+            <p class="practice">Utilizar os espaços de maneira adequada</p>
+            <p class="practice">Não gritar ou correr</p>
+            <p class="practice">Não bloquear passagens</p>
+            <p class="practice">Respeitar quem está estudando ou trabalhando</p>
+          </div>
+          <div class="env-panel" id="env-convivencia" role="tabpanel">
+            <span class="env-tag">Ambiente C</span>
+            <h3>Áreas de convivência</h3>
+            <p class="env-quote">Convivência é troca. Deixe o espaço tão bom quanto — ou melhor do que — você encontrou.</p>
+            <p class="practice">Utilizar os locais destinados à permanência dos alunos</p>
+            <p class="practice">Manter o ambiente limpo</p>
+            <p class="practice">Respeitar os demais</p>
+            <p class="practice">Evitar comportamentos que incomodem outras pessoas</p>
+          </div>
+          <div class="env-panel" id="env-profissional" role="tabpanel">
+            <span class="env-tag">Ambiente D</span>
+            <h3>Ambientes profissionais</h3>
+            <p class="env-quote">Aqui já é quase lá. Sinalização existe por um motivo — e equipamento desrespeitado hoje é recurso que falta amanhã.</p>
+            <p class="practice">Respeitar regras e sinalizações</p>
+            <p class="practice">Cuidar dos equipamentos</p>
+            <p class="practice">Ter responsabilidade com materiais e patrimônio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 03 · ATITUDE PEQUENA, IMPACTO GRANDE ===== -->
+  <section id="atitudes" style="padding-block:clamp(70px,10vw,120px);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>03</em> — Atitudes</span><span>Manual de Boas Práticas</span></div>
+      <h2 class="sec-title reveal">Atitude que parece pequena,<br><span class="it">impacto que pode ser grande.</span></h2>
+      <div class="tbl-head reveal"><span>O que você fez</span><span></span><span>O que comunica profissionalmente</span></div>
+      <div class="row reveal"><span class="row-sit">Sentar em local não permitido</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de atenção às regras</span></div>
+      <div class="row reveal" data-d="2"><span class="row-sit">Deitar ou cochilar em áreas inadequadas</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de postura</span></div>
+      <div class="row reveal" data-d="3"><span class="row-sit">Gritar nos corredores</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de respeito ao ambiente</span></div>
+      <div class="row reveal" data-d="4"><span class="row-sit">Sentar no chão em local de circulação</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de percepção do espaço</span></div>
+      <div class="row reveal" data-d="5"><span class="row-sit">Deixar lixo pelo caminho</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de responsabilidade</span></div>
+      <div class="row reveal" data-d="6"><span class="row-sit">Interromper alguém constantemente</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de respeito</span></div>
+      <div class="row reveal" data-d="7"><span class="row-sit">Não cumprir um combinado</span><svg class="i row-arrow"><use href="#ic-arrow-r"/></svg><span class="row-read">falta de comprometimento</span></div>
+      <div class="row positive reveal" data-d="8"><span class="row-sit">Ajudar a manter o ambiente organizado</span><svg class="i row-arrow" style="color:var(--ink)"><use href="#ic-arrow-r"/></svg><span class="row-read"><svg class="i"><use href="#ic-check"/></svg>responsabilidade e colaboração</span></div>
+      <p class="tbl-note reveal">Esta seção não existe para expor ninguém. A questão é simples: <b>comportamentos cotidianos comunicam características profissionais</b>. Vale para todo mundo — a pergunta é o que os seus estão comunicando.</p>
+    </div>
+  </section>
+
+  <!-- ===== 04 · SOFT SKILLS EM AÇÃO ===== -->
+  <section id="softskills" style="padding-block:clamp(70px,10vw,120px);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>04</em> — Competências</span><span>Manual de Boas Práticas</span></div>
+      <h2 class="sec-title reveal">Soft skills <span class="it">em ação</span></h2>
+      <div class="reveal">
+        <div class="skill open">
+          <button class="skill-head" aria-expanded="true"><span class="sk-name">Respeito</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Ouvir, esperar sua vez e respeitar os espaços compartilhados. Respeito não é concordar com tudo — é reconhecer que o outro também ocupa o lugar.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Ouvir o colega até o fim, sem cortar</li>
+              <li>Esperar a sua vez na fila sem furar</li>
+              <li>Baixar o volume perto de quem está trabalhando</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+        <div class="skill">
+          <button class="skill-head" aria-expanded="false"><span class="sk-name">Responsabilidade</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Cumprir regras, horários e combinados. Quem cumpre o que diz se torna alguém em quem se pode confiar — e confiança é a moeda mais valiosa de qualquer equipe.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Entregar o trabalho no prazo combinado</li>
+              <li>Devolver o que pegou emprestado</li>
+              <li>Assumir um erro sem apontar culpados</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+        <div class="skill">
+          <button class="skill-head" aria-expanded="false"><span class="sk-name">Comunicação</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Saber falar, ouvir e se expressar adequadamente. Boa comunicação não é falar bonito — é fazer o outro entender, e entender o outro.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Perguntar em vez de reclamar</li>
+              <li>Discordar com argumento, não com ironia</li>
+              <li>Escrever mensagens claras e completas</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+        <div class="skill">
+          <button class="skill-head" aria-expanded="false"><span class="sk-name">Autonomia</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Tomar decisões responsáveis sem precisar ser constantemente orientado. Autonomia não é fazer o que quer — é saber o que precisa ser feito e fazer.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Recolher um lixo no chão sem que peçam</li>
+              <li>Organizar o material sem lembrete</li>
+              <li>Buscar ajuda antes que o problema cresça</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+        <div class="skill">
+          <button class="skill-head" aria-expanded="false"><span class="sk-name">Trabalho em equipe</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Entender que suas atitudes interferem no ambiente e nas outras pessoas. Nenhum resultado grande foi construído por alguém sozinho.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Carregar um peso do grupo: a apresentação, a limpeza, o clima</li>
+              <li>Incluir quem ficou de fora</li>
+              <li>Celebrar o resultado coletivo, não só o seu</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+        <div class="skill">
+          <button class="skill-head" aria-expanded="false"><span class="sk-name">Ética</span><svg class="i sk-ic"><use href="#ic-plus"/></svg></button>
+          <div class="skill-body"><div class="skill-clip"><div class="skill-content">
+            <p class="sk-def">Fazer o que é correto mesmo quando ninguém está olhando. É justamente quando ninguém está olhando que se revela quem você realmente é.</p>
+            <div class="sk-daily"><b>No cotidiano, isso parece:</b><ul>
+              <li>Não colar na prova</li>
+              <li>Não usar o que é dos outros sem permissão</li>
+              <li>Mostrar o caminho certo para quem está errando</li>
+            </ul></div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 05 · EU NO MERCADO DE TRABALHO ===== -->
+  <section id="mercado" style="padding-block:clamp(70px,10vw,120px);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>05</em> — Mercado</span><span>Manual de Boas Práticas</span></div>
+      <h2 class="sec-title reveal">Eu, no <span class="it">mercado</span> de trabalho</h2>
+      <div class="compare reveal" id="compare" role="slider" tabindex="0" aria-label="Arraste para comparar a postura na escola e no trabalho" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="--split:50%">
+        <div class="compare-side cmp-work">
+          <div class="side-inner">
+            <span class="cmp-label">No trabalho</span>
+            <p class="cmp-quote">"Minha postura será observada por colegas, gestores e clientes."</p>
+            <p class="cmp-note">Avaliado a cada reunião, prazo e conversa de corredor.</p>
+          </div>
+        </div>
+        <div class="compare-side cmp-school">
+          <div class="side-inner">
+            <span class="cmp-label">Na escola</span>
+            <p class="cmp-quote">"Eu posso fazer isso porque ninguém está vendo."</p>
+            <p class="cmp-note">Ninguém está avaliando. <em>Ainda.</em></p>
+          </div>
+        </div>
+        <div class="compare-line"></div>
+        <div class="compare-handle"><svg class="i"><use href="#ic-lr"/></svg></div>
+      </div>
+      <p class="cmp-hint reveal">← arraste a linha para revelar cada lado →</p>
+      <div class="provoke reveal">
+        <span class="tag">Pergunta para você</span>
+        <p>Se um recrutador acompanhasse seu comportamento durante um dia na escola, <span class="it">que profissional ele enxergaria?</span></p>
+        <p class="after">Um recrutador não precisa de crachá para avaliar postura. Ele avalia comportamento — e você já está sendo avaliado todos os dias, pela pessoa que mais importa: o profissional que você está construindo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 06 · CÓDIGO DE BOAS PRÁTICAS ===== -->
+  <section id="compromisso" style="padding-block:clamp(70px,10vw,120px);border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head reveal"><span>Seção <em>06</em> — Compromisso</span><span>Manual de Boas Práticas</span></div>
+      <h2 class="sec-title reveal">Código de <span class="it">Boas Práticas</span></h2>
+      <ol class="code-list">
+        <li class="reveal">Respeitar pessoas, espaços e regras.</li>
+        <li class="reveal" data-d="2">Utilizar cada ambiente de maneira adequada.</li>
+        <li class="reveal" data-d="3">Manter uma comunicação respeitosa.</li>
+        <li class="reveal" data-d="4">Cuidar do patrimônio da escola.</li>
+        <li class="reveal" data-d="5">Manter os ambientes organizados.</li>
+        <li class="reveal" data-d="6">Demonstrar responsabilidade.</li>
+        <li class="reveal" data-d="7">Respeitar o momento de aprendizagem dos colegas.</li>
+        <li class="reveal" data-d="8">Ter consciência de que nossas atitudes impactam outras pessoas.</li>
+        <li class="reveal" data-d="8">Resolver conflitos por meio do diálogo.</li>
+        <li class="reveal" data-d="8">Representar a escola com postura profissional.</li>
+      </ol>
+      <div class="sign-grid">
+        <div class="sign-copy reveal">
+          <h3>Comprometo-me <span class="it">com este código.</span></h3>
+          <p>Como em um contrato de trabalho de verdade, leia, concorde e assine abaixo. Vale para a sala de aula, o corredor, o laboratório — e para todos os lugares onde este profissional vai chegar.</p>
+          <p class="sign-motto">"Assinar é fácil. Viver o assinado, todo dia, é o que forma um profissional."</p>
+        </div>
+        <div class="sign-box reveal" data-d="2">
+          <div class="stamp" id="signStamp"><svg class="i"><use href="#ic-check"/></svg>Registrado</div>
+          <span class="sign-label">Assinatura do(a) estudante</span>
+          <canvas id="signCanvas" aria-label="Área para assinar o compromisso"></canvas>
+          <div class="sign-tools">
+            <button class="btn-clear" id="clearBtn" type="button">Apagar assinatura</button>
+            <p class="sign-status" id="signStatus"><svg class="i"><use href="#ic-check"/></svg><span>Aguardando assinatura — use o mouse ou o dedo.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DESAFIO FINAL ===== -->
+  <section class="final" id="final" style="padding-block:clamp(70px,10vw,120px) 0">
+    <div class="wrap final-inner">
+      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text><textPath href="#circPath" textLength="500">POSTURA PROFISSIONAL • CONDUTA • BOAS PRÁTICAS • CONVIVÊNCIA •&#160;</textPath></text>
+        <path d="M100 84v32M84 100h32M89 89l22 22M111 89l-22 22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="sec-head reveal" style="text-align:left"><span>Encerramento — Desafio final</span><span>Manual de Boas Práticas</span></div>
+      <p class="eyou reveal">E você?</p>
+      <p class="question reveal" data-d="2">Que profissional suas atitudes estão construindo?</p>
+      <span class="start reveal" data-d="3">Comece hoje.</span>
+      <div class="final-actions reveal" data-d="4">
+        <a class="btn btn-primary" href="#compromisso">Assinar o compromisso</a>
+        <a class="btn btn-ghost" href="#topo">Revisar o manual</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="wrap footer-grid">
+        <p><b>MBP</b> — Manual de Boas Práticas Profissionais e de Convivência na Escola</p>
+        <!-- personalize aqui com o nome do seu grupo -->
+        <p>Produzido por alunos, para alunos</p>
+        <p>Edição escolar · Nº 01</p>
+      </div>
+    </footer>
+  </section>
+</main>
+
+</body>
+</html>
